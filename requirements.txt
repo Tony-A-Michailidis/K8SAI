@@ -1,0 +1,35 @@
+# Core dependencies
+anthropic>=0.34.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+pyyaml>=6.0
+click>=8.0.0
+
+# Kubernetes and log processing
+kubernetes>=28.0.0
+kubectl-python>=1.0.0
+
+# Data processing and analysis
+pandas>=2.0.0
+numpy>=1.24.0
+python-dateutil>=2.8.0
+
+# Monitoring and observability
+structlog>=23.0.0
+rich>=13.0.0
+prometheus-client>=0.17.0
+
+# Async processing
+asyncio-throttle>=1.0.0
+aiofiles>=23.0.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+isort>=5.12.0
+mypy>=1.5.0
+
+# Configuration and environment
+python-dotenv>=1.0.0
+toml>=0.10.0

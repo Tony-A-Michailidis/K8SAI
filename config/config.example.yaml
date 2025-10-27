@@ -1,0 +1,46 @@
+# Example configuration for K8s AI Log Analyzer
+# Copy this file to config.yaml and customize for your environment
+
+debug: false
+log_level: INFO
+
+cluster:
+  name: my-aks-cluster
+  kubeconfig_path: ~/.kube/config
+  context: my-aks-context  # Optional: specific context to use
+  namespaces:
+    - default
+    - production
+    - staging
+  exclude_namespaces:
+    - kube-system
+    - kube-public
+
+claude:
+  # API key can also be set via ANTHROPIC_API_KEY environment variable
+  model: claude-3-5-sonnet-20241022
+  max_tokens: 4096
+  temperature: 0.1
+
+analysis:
+  batch_size: 100
+  analysis_interval: 60  # seconds
+  max_log_age: 3600      # seconds (1 hour)
+  
+  # Enable/disable specific analysis types
+  error_detection: true
+  performance_analysis: true
+  security_analysis: true
+  resource_analysis: true
+  natural_language_summary: true
+  troubleshooting_suggestions: true
+
+alerts:
+  enable_console_output: true
+  enable_file_output: true
+  output_dir: ./outputs
+  
+  # Alert thresholds
+  error_threshold: 5
+  performance_threshold: 0.8
+  security_alert_enabled: true
