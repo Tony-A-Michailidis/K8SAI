@@ -1,6 +1,6 @@
 # K8s AI Log Analyzer
 
-An intelligent AKS/Kubernetes log analysis system, written with the help of Claude Sonnet 4.5, that uses Claude AI to automatically interpret cluster logs, detect anomalies, identify security threats, and provide actionable troubleshooting suggestions. Some configuration required, mostly self-explanatory for seasoned coders. If your logs contain sensitive data, and exposing them violate your company's IT Security and Privacy Policies, don't use it! Bring your own API key.
+An intelligent AKS/Kubernetes log analysis system, written with the help of Claude Sonnet 4.5, that uses Claude AI to automatically interpret cluster logs, detect anomalies, identify security threats, and provide actionable troubleshooting suggestions. Some configuration required, mostly self-explanatory for seasoned coders. If your logs contain sensitive data, and exposing them violates your company's IT Security and Privacy Policies, don't use it! Bring your own API key.
 
 
 ## 🌟 Features
